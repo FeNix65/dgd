@@ -5,11 +5,11 @@ let imgPool = false;
 headerBtn.addEventListener('click', function(){
     let navHeaderListDeadpool = document.getElementById('imgClickAndChange');
     if(!imgPool) {
-        navHeaderListDeadpool.src = '/img/jirny.png';
+        navHeaderListDeadpool.src = './img/jirny.png';
         imgPool = true;
     }
     else{
-        navHeaderListDeadpool.src = '/img/Main-image.png';
+        navHeaderListDeadpool.src = './img/Main-image.png';
         imgPool = false;
     }
 });
