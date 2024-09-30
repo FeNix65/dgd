@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-header">
+            <ul class="nav-header__list">
+                <li class="nav-header__list-items">
+                    <a class="nav-header__link" href="#footer">Главная</a>
+                </li>
+                <li class="nav-header__list-items">
+                    <a class="nav-header__link" href="#characterinfo">О персонаже</a>
+                </li>
+                <li class="nav-header__list-items">
+                    <a class="nav-header__link" href="#gallery">Галерея</a>
+                </li>
+            </ul>
+        </nav>
+        <ul class="header__list">
+            <li class="header__list-items">
+                <img class="nav-header__list-logo" src="./img/footer-logo.png" alt="">
+            </li>
+            <li class="header__list-items">
+                <img class="nav-header__list-deadpool" src="./img/Main-image.png" alt="" id="imgClickAndChange">
+            </li>
+        </ul>
+        <button class="header-btn">Больше</button>
+    </header>
+    <main class="main">
+        <section class="characterinfo" id="characterinfo">
+            <img class="characterinfo__img" src="./img/char-info-deadpool.png" alt="">
+            <h2 class="characterinfo__description">
+                Прозванный «языкастым наёмником» Дэдпул — оснащённый по последнему слову техники боец, известный своими остротами и чёрным юмором. Как и Росомаха из Людей Икс, Дэдпул был подвергнут опытам по программе «Оружие Икс».
+            </h2>
+        </section>
+        <section class="gallery" id="gallery">
+            <ul class="gallery__list">
+                <li class="gallery__list-items">
+                    <img class="gallery__list-items-img" src="./img/gall-image1.png" alt="">
+                </li>
+                <li class="gallery__list-items">
+                    <img class="gallery__list-items-img" src="./img/gall-image2.png" alt="">
+                    <img class="gallery__list-items-img" src="./img/gall-image3.png" alt="">
+                    <img class="gallery__list-items-img" src="./img/gall-image4.png" alt="">
+                </li>
+                <li class="gallery__list-items">
+                    <img class="gallery__list-items-img" src="./img/gall-image5.png" alt="" width="456px" height="306" >
+                    <img class="gallery__list-items-img" src="./img/gall-image6.png" alt="" width="141px" height="306px">
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer class="footer" id="footer">
+        <div class="footer__container">
+            <ul class="footer__container-list">
+                <li class="footer__list-items">
+                    <img class="footer__list-items__img-deadpool" src="./img/footer-img-1.png" alt="">
+                </li>
+                <li class="footer__list-items">
+                    <img class="footer__list-items__img-logo" src="./img/header-logo.png" alt="">
+                    <p class="footer__list-items__description" >Вы, наверное, думаете, почему я в красном? Чтобы плохие ребята не видели, что у меня идет кровь... Этот чувак рубит фишку — коричневые штаны надел.</p>
+                </li>
+            </ul>
+            <div class="footer__container-subcontainer">
+                <img class="footer__container__img" src="./img/footer-line.png" alt="">
+                <img class="footer__container__img" src="./img/footeer-icons.png" alt="">
+            </div>  
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
