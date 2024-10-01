@@ -101,6 +101,22 @@ footer.onmouseleave = () => {
     footerContainerList.style.transform = 'translate(0, 0)';
 };
 
+let deadpoolClick = document.querySelector('.footer__list-items__img-deadpool');
+let dialogClick = document.querySelector('.footer-click');
+let clickCount = 0;
+
+  deadpoolClick.addEventListener('click', () => {
+    clickCount++;
+    if (clickCount === 5) {
+        dialogClick.style.opacity = 1;
+    }
+    if (clickCount === 10) {
+        deadpoolClick.src = './img/footer-img2.png';
+    }
+    if (clickCount === 15) {
+        deadpoolClick.src = './img/footer-img3.png';
+    }
+  });
 //  для жирни
 // function changeImage() {
 //     if (document.getElementById("imgClickAndChange").src == "http://www.userinterfaceicons.com/80x80/minimize.png"){

@@ -296,3 +296,9 @@ header,.characterinfo,.gallery{
     justify-content: space-evenly;
     height: 160px;
 }
+.footer-click{
+    position: absolute;
+    opacity: 0;
+    margin-top: 2%;
+    left: 30%;
+}
