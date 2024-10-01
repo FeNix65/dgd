@@ -1,3 +1,18 @@
+// preloader
+window.onload = function() {
+    let preloader = document.getElementById('preloader');
+    preloader.classList.add('hide-preloader');
+    setInterval(function() {
+          preloader.classList.add('preloader-hidden');
+          let headerAnim = document.querySelector('.nav-header__list-deadpool');
+          headerAnim.classList.add('header-animation');
+          let headerAnima = document.querySelector('.nav-header__list-logo');
+          headerAnima.classList.add('header-animation-logo');
+    }, 990);
+
+}
+
+
 // header
 let headerBtn = document.querySelector('.header-btn');
 let imgPool = false; 
@@ -5,16 +20,14 @@ let imgPool = false;
 headerBtn.addEventListener('click', function(){
     let navHeaderListDeadpool = document.getElementById('imgClickAndChange');
     if(!imgPool) {
-        navHeaderListDeadpool.src = '/img/jirny.png';
+        navHeaderListDeadpool.src = './img/jirny.png';
         imgPool = true;
     }
     else{
-        navHeaderListDeadpool.src = '/img/Main-image.png';
+        navHeaderListDeadpool.src = './img/Main-image.png';
         imgPool = false;
     }
 });
-
-
 
 
 // characterinfo
@@ -30,6 +43,7 @@ const clas = new IntersectionObserver(entries => {
 });
 
 clas.observe(document.querySelector('.characterinfo'));
+
 
 let characterinfo = document.querySelector('.characterinfo');
 let characterinfoImg = document.querySelector('.characterinfo__img');
@@ -49,8 +63,6 @@ characterinfo.onmouseleave = () => {
 };
 
 
-
-
 // gallery
 const observer = new IntersectionObserver(entries => {
     // перебор записей
@@ -63,6 +75,7 @@ const observer = new IntersectionObserver(entries => {
     });
   });
   observer.observe(document.querySelector('.gallery'));
+
 
 // footer
 let footer = document.querySelector('.footer');
