@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Deadpool</title>
+    <link rel="shortcut icon" href="./img/preloader.png" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div id='preloader'>
         <img src="./img/preloader.png" alt="preloader">
     </div>
-    <header class="header">
+    <header class="header" id="header">
         <nav class="nav-header">
             <ul class="nav-header__list">
                 <li class="nav-header__list-items">
@@ -22,24 +23,31 @@
                 <li class="nav-header__list-items">
                     <a class="nav-header__link" href="#gallery">Галерея</a>
                 </li>
+                <li class="nav-header__list-items">
+                    <a class="nav-header__link" href="/index3.html#comix">Комикс</a>
+                </li>
             </ul>
         </nav>
-        <ul class="header__list">
-            <li class="header__list-items">
-                <img class="nav-header__list-logo" src="./img/footer-logo.png" alt="">
+        <ul class="header__list-scnd">
+            <li class="header__list-items-scnd">
+             
+                <img class="nav-header__list-description" src="./img/footer-logo.png">
+                <button class="header-btn header-btn-scnd">Больше</button>
             </li>
             <li class="header__list-items">
                 <img class="nav-header__list-deadpool" src="./img/Main-image.png" alt="" id="imgClickAndChange">
             </li>
         </ul>
-        <button class="header-btn">Больше</button>
+        
     </header>
     <main class="main">
         <section class="characterinfo" id="characterinfo">
-            <img class="characterinfo__img" src="./img/char-info-deadpool.png" alt="">
-            <h2 class="characterinfo__description">
-                Прозванный «языкастым наёмником» Дэдпул — оснащённый по последнему слову техники боец, известный своими остротами и чёрным юмором. Как и Росомаха из Людей Икс, Дэдпул был подвергнут опытам по программе «Оружие Икс».
-            </h2>
+            <div class="characterinfo__container">
+                <img class="characterinfo__img" src="./img/char-info-deadpool.png" alt="">
+                <h2 class="characterinfo__description">
+                    Прозванный «языкастым наёмником» Дэдпул — оснащённый по последнему слову техники боец, известный своими остротами и чёрным юмором. Как и Росомаха из Людей Икс, Дэдпул был подвергнут опытам по программе «Оружие Икс».
+                </h2>
+            </div>
         </section>
         <section class="gallery" id="gallery">
             <ul class="gallery__list">
@@ -59,6 +67,7 @@
             <a class="gallery__link" href="./index2.html">читать далее...</a>
         </section>
     </main>
+    <div class="shadow"></div>
     <footer class="footer" id="footer">
         <img class="footer-click" src="./img/click.png" alt="">
         <div class="footer__container">
